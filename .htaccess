@@ -1,0 +1,7 @@
+# Turn rewrite on
+Options +FollowSymLinks
+RewriteEngine On
+
+# Redirect requests to index.php
+RewriteCord %{Request_URI} !=/index.php
+RewriteRule .* /index.php
